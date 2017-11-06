@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTenNhanVien"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:background="#7dc5d7"
+        android:inputType="textPersonName"
+        android:hint="Nhập Tên Nhân Viên" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/radio_group">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nam"
+            android:textColor="#ec0738"
+            android:textSize="17sp"
+            android:id="@+id/rdNam"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nu"
+            android:textSize="17sp"
+            android:textColor="#ec0738"
+
+            android:id="@+id/rdNu"/>
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spinner"
+        style="@android:style/Widget.Holo.Light.Spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="7dp" />
+
+
+    <EditText
+        android:id="@+id/editDiaChi"
+        android:layout_width="320dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="5dp"
+        android:background="#7dc5d7"
+        android:padding="5dp"
+        android:textSize="17sp"
+        android:inputType="textPersonName"
+        android:hint="Nhập Địa Chỉ" />
+
+    <EditText
+        android:id="@+id/editSDT"
+        android:layout_width="320dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="5dp"
+        android:textSize="17sp"
+        android:background="#7dc5d7"
+        android:padding="5dp"
+        android:inputType="textPersonName"
+        android:hint="Nhập Số Điện Thoại" />
+
+    <EditText
+        android:id="@+id/editBirthDay"
+        android:layout_width="320dp"
+        android:padding="5dp"
+        android:background="#7dc5d7"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="17sp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nhập Ngày Sinh"/>
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="320dp"
+        android:layout_gravity="center"
+        android:textSize="17sp"
+        android:background="#7dc5d7"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nhập Email" />
+    <EditText
+        android:id="@+id/editLuong"
+        android:layout_width="320dp"
+        android:layout_gravity="center"
+        android:textSize="17sp"
+        android:background="#7dc5d7"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="Nhập Lương" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="25dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_effect"
+            android:id="@+id/btndangkiNhanVien"
+            android:layout_weight="1"
+            android:onClick="DangNhap"
+            android:text="ĐĂNG NHẬP" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="25dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/btnthoatdangkiNhanVien"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_effect"
+            android:layout_weight="1"
+            android:text="THOÁT" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="25dp" />
+
+    </TableRow>
+</LinearLayout>
