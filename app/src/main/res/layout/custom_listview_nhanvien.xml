@@ -4,7 +4,7 @@
     android:layout_height="match_parent">
     <LinearLayout
         android:orientation="vertical"
-        android:layout_marginLeft="4dp"
+        android:layout_marginLeft="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
@@ -12,9 +12,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/txtTenNhanVien"
             android:text="Tên Nhân Viên"
-            android:textSize="20sp"
-            android:padding="3dp"
-            android:textColor="#0d0f70"/>
+            android:textSize="22sp"
+            android:textColor="#70260d"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -22,16 +21,16 @@
             android:id="@+id/txtSoDienThoai"
             android:text="Số Điện Thoại"
             android:textSize="16sp"
-            android:padding="3dp"
+
             android:textColor="#4245d4"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/txtChucVu"
-            android:text="Chức vụ"
+            android:id="@+id/txtGioitinh"
+            android:text="Giới Tính"
             android:textSize="16sp"
-            android:padding="3dp"
+
             android:textColor="#4245d4"/>
         <TextView
             android:layout_width="match_parent"

@@ -25,7 +25,7 @@ public class NhanVienDAO  {
         database = new Database(context);
     }
     public List<NhanVienDTO> LoadAllNhanVien(){
-        List<NhanVienDTO> list = new ArrayList<>();
+        List<NhanVienDTO> list = new ArrayList<NhanVienDTO>();
         sqLiteDatabase = database.getWritableDatabase();
         String sql = " select * from "+ Database.TABLE_NHANVIEN;
 
@@ -59,9 +59,14 @@ public class NhanVienDAO  {
         values.put(Database.LuongNV_NHANVIEN,nhanVienDTO.getLuongNV());
         values.put(Database.EmailNV_NHANVIEN,nhanVienDTO.getEmailNV());
         values.put(Database.MaPB_PHONGBAN,nhanVienDTO.getMaPB());
+        values.put(Database.GioiTinhNV_NHANVIEN,nhanVienDTO.getGioiTinhNV());
 
         sqLiteDatabase.insert(Database.TABLE_NHANVIEN,null,values);
         sqLiteDatabase.close();
 
+    }
+    public int XoaNhanVien(int id){
+        sqLiteDatabase = database.getWritableDatabase();
+        return sqLiteDatabase.delete(Database.TABLE_NHANVIEN,Database.MaNV_NHANVIEN+"=?",new String[] {String.valueOf(id)});
     }
 }

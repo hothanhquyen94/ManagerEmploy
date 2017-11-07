@@ -71,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
                 editPassDKagain = (EditText) dialog.findViewById(R.id.txtdangkipass1);
                 editUserDK = (EditText)dialog.findViewById(R.id.txtdangkiuser);
                 btnDangKi = (Button)dialog.findViewById(R.id.btndangki);
+                btnThoatDK = (Button)dialog.findViewById(R.id.btnthoatdangki);
                 btnDangKi.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
@@ -88,6 +89,12 @@ public class MainActivity extends AppCompatActivity {
                             Toast.makeText(getApplicationContext(),"ĐĂNG KÍ THÀNH CÔNG",Toast.LENGTH_LONG).show();
                             dialog.dismiss();
                         }
+                    }
+                });
+                btnThoatDK.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        dialog.dismiss();
                     }
                 });
 

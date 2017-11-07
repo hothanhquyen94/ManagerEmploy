@@ -28,6 +28,7 @@ public class PhongBanDAO {
         sqLiteDatabase = databasehelper.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(Database.TenPB_PHONGBAN,phongBanDTO.getTenPhongBan());
+
         sqLiteDatabase.insert(Database.TABLE_PHONGBAN,null,contentValues);
         sqLiteDatabase.close();
     }

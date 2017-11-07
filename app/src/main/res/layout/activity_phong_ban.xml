@@ -4,9 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:id="@+id/layout_phongban"
+    android:background="#EEEEEE"
     android:layout_height="match_parent"
     tools:context="com.example.unitec.quanlynhanvien.PhongBanActivity">
     <ListView
+        android:background="#EEEEEE"
         android:id="@+id/listPhongBan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

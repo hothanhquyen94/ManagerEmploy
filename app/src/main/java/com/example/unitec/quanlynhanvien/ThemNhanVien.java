@@ -1,5 +1,6 @@
 package com.example.unitec.quanlynhanvien;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
@@ -77,8 +78,15 @@ public class ThemNhanVien extends AppCompatActivity {
             public void onClick(View view) {
                 RadioGroup radioGroup =(RadioGroup)findViewById(R.id.radio_group);
                 int rdId = radioGroup.getCheckedRadioButtonId();
-                RadioButton  rdIdCheck  = (RadioButton)findViewById(rdId);
-                String gioitinh = rdIdCheck.getText().toString();
+                String gioitinh ="";
+               // RadioButton  rdIdCheck  = (RadioButton)findViewById(rdId);
+                if(rdId==R.id.rdNam){
+                    gioitinh = "Nam";
+                }else if (rdId==R.id.rdNu){
+                    gioitinh = "Nữ";
+                }
+
+                //String gioitinh = rdIdCheck.getText().toString();
                 int maPB = listPhongBan.get(vitri).getMaPhongBan();
                 try{
                     NhanVienDTO nhanVienDTO = new NhanVienDTO();
@@ -92,11 +100,14 @@ public class ThemNhanVien extends AppCompatActivity {
                     nhanVienDTO.setMaPB(maPB);
 
                     nhanVienDAO.ThemNhanVien(nhanVienDTO);
+                    Toast.makeText(getApplicationContext(),"OK",Toast.LENGTH_SHORT).show();
+
+                    Intent intent = new Intent(ThemNhanVien.this,NhanVienActivity.class);
+                    startActivity(intent);
+
                 }catch (Exception e){
                     Toast.makeText(getApplicationContext(),"ERROR",Toast.LENGTH_SHORT).show();
                 }
-
-
             }
         });
 

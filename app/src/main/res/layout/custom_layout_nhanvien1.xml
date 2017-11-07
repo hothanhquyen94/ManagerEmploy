@@ -28,8 +28,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/vChucVu"
-            android:text="Chức vụ"
+            android:id="@+id/vGioiTinh"
+            android:text="Gioi Tinh"
             android:textSize="16sp"
             android:padding="3dp"
             android:textColor="#4245d4"/>
